@@ -26,7 +26,7 @@ const Grid = () => {
       .catch(error => console.error(error));
 
   }, []);
-  // Defines column names and parameters within an array
+  // Defines column names and parameters within an array for AG GRID
   const columnDefs = [
     { headerName: 'Name', field: "name", sortable: true, filter: true },
     { headerName: 'Height', field: "height", sortable: true, filter: true },
@@ -38,6 +38,7 @@ const Grid = () => {
     { headerName: 'Home World', field: "homeworld", sortable: true, filter: true },
   ];
 
+  //returns the AG Grid Component with the paramaters for coloumns and row data (API) also sets sorting and filters
   return (
     <div className="ag-theme-alpine" style={{ height: "300px", width: "100%" }}>
       <AgGridReact columnDefs={columnDefs} rowData={rowData} pagination={true} paginationPageSize={5}></AgGridReact>
@@ -45,7 +46,7 @@ const Grid = () => {
   );
 };
 
-
+// App functions renders Grid Function
 function App() {
   return (
     <div>

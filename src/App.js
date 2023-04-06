@@ -30,8 +30,8 @@ const Grid = () => {
   // Defines column names and parameters within an array for AG GRID
   const columnDefs = [
     { headerName: 'Name', field: "name", sortable: true, filter: true },
-    { headerName: 'Height', field: "height", sortable: true, filter: 'agNumberColumnFilter' },
-    { headerName: 'Mass', field: "mass", sortable: true, filter: 'agNumberColumnFilter' },
+    { headerName: 'Height', field: "height", sortable: true, filter: 'true' },
+    { headerName: 'Mass', field: "mass", sortable: true, filter: 'true' },
     { headerName: 'Hair Colour', field: "hair_color", sortable: true, filter: true },
     { headerName: "Eye Colour", field: "eye_color", sortable: true, filter: true },
     { headerName: 'Birth Year', field: "birth_year", sortable: true, filter: true },
